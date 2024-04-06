@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Kitoblar ro'yxati </title>
+
+</head>
+<body>
+<h1>Library Page</h1>
+<h2>Books: </h2>
+<ul>{% for book in books %}
+    <li>
+        <h3><a href="">Title : {{book.title}} </a></h3>
+
+    </li>
+    {% endfor %}
+</ul>
+<a href="{% url 'lending' %}"> Back</a>
+
+</body>
+</html>
